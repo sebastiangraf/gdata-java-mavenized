@@ -4,6 +4,27 @@
     <groupId>com.google.gdata</groupId>
     <artifactId>core</artifactId>
     <version>1.47.1</version>
+    <packaging>jar</packaging>
+    <name>Google Data Java Client Library</name>
+    <description>The Google Data Java client library is written by Google. 
+    It supports the latest major version of the following Google Data API's.</description>
+    <url>http://code.google.com/p/gdata-java-client/</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+    <developer>
+    <organization>Google</organization>
+    </developer>
+    </developers>
+    <scm>
+        <url>http://gdata-java-client.googlecode.com/svn/trunk/</url>
+        <connection>scm:svn:http://gdata-java-client.googlecode.com/svn/trunk/</connection>
+        <developerConnection>scm:svn:http://gdata-java-client.googlecode.com/svn/trunk/</developerConnection>
+    </scm>
 
 
     <build>
@@ -38,6 +59,17 @@
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
                 <executions>
                     <execution>
                         <goals>
